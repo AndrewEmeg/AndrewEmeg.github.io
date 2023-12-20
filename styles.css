@@ -1,10 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(68, 0, 255);
+    font-family: 'Montserrat', sans-serif;;
+    background-color: #f4d0d0;
+}
+
+header {
+    background: #0E4E3A;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a {
+    padding: 0 20px;
+    border: 1px solid ed;
+    text-decoration: none;
+    color: #faebd7;
+    display: inline-block;
+}
+
+li a::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #c4c4f7;
+    transition:all .5s
+}
+
+li a:hover::after {
+    width:100%;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+    border: 0px solid red;
+    padding-left: 180px;
+    padding-right: 80px;
+}
+
+.hero-img {
+    max-width: 500px;
+    height: auto;
+}
+
+.content-left {
+    border: 0px solid rgb(21, 255, 0);
+    width: 35%;
+    flex-basis: 60%;
+}
+
+.content-right {
+    border: 0px solid blue;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: #0c0a09;
+    border: 0px solid green;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+main p {
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+main button {
+    padding: 10px 24px;
+    font-family: 'Montserrat';
+    color: #faebd7;
+    font-weight: 550;
+    background-color: #0E4E3A;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.other h1 {
+    font-size: 2.5rem;
+    color: #0E4E3A;
+    border: 0px solid green;
+    font-weight: 900;
+    border: 0px solid red;
+    padding: 30px 180px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    padding: 0 180px;
+    border: 0px solid red;
+    padding-bottom: 80px;
+}
+
+.portfolio .grid-img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #bd5940;
+
+}
+
+.portfolio .portfolio-item {
+    box-shadow: 0 5px 10px #5e6160;
+    border-radius: 5px;
+    background: #ec8c73;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.portfolio .portfolio-item p {
+    margin-bottom: 20;
+    border: 0px solid blue;
+    line-height: 20px;
+}
+
+.portfolio .portfolio-item h3 {
+    margin: 20px 6px 0;
+}
+
+.portfolio .portfolio-item .btn {
+    border-radius: 3px;
+    background: #0E4E3A;
+    color: #faebd7;
+    padding: 10px 55px;
+    margin-top: 30px;
+    border: 0px solid red;
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+.form {
+    padding: 50px 180px;
+    border: 0px solid red;
+    color: #faebd7;
+    background-color: #0E4E3A;
+    margin-top: 40px;
     
 }
 
-h1 {
-    color: red;
-    background-color: white;
-    border: 1px solid green;
+/* .name-phone {
+    display: flex;
+} */
+
+label {
+    display: block;
+    margin-top: 20px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.form h2 {
+    margin-bottom: 30px;
+}
+
+input {
+    display: block;
+    width: 61.5rem;
+    height: 2rem;
+    padding-left: 1rem;
+    font-family: 'Montserrat';
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: #0c0a09;
+    box-shadow: 0 3px 3px  #06241a
+}
+
+textarea {
+    padding: 1rem;
+    width: 61.5rem;
+    height: 25rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 3px 3px  #06241a
+}
+
+/* button {
+    display: flex;
+} */
+
+button {
+    padding: 1rem 4rem;
+    background-color: #bd5940;
+    color: #faebd7;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    box-shadow: 0 3px 3px  #180b08
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.footer-icon {
+    width: 30px;
+}
+
+footer {
+    padding: 100px 180px 70px 180px;
+}
+
+footer h1 {
+    padding-bottom: 0.5rem;
+}
+
+footer p {
+    padding-bottom: 1rem;
+}
+
+footer h5 {
+    margin-top: 90px;
 }
