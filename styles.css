@@ -234,3 +234,48 @@ footer p {
 footer h5 {
     margin-top: 90px;
 }
+
+.gallery-img {
+    display: none;
+    max-height: 500px;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+}
+
+.active {
+    display: block;
+}
+
+.image-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: blueviolet;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 5rem;
+    margin-top: 1rem;
+    border-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.prev {
+    margin-right: 1.5rem;
+}
+
+.btn:disabled {
+    background-color: dimgray;
+    cursor: not-allowed;
+}
